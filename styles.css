@@ -51,7 +51,7 @@ body {
   height: 90%;
   width: 90%;
   padding: 10px 10px;
-  background-color:rgb(224, 224, 107);
+  background-color:rgb(172, 172, 165);
   
 }
 
@@ -204,7 +204,7 @@ body {
   content: "";
   position: absolute;
   top: 14px;
-  left: -21px;
+  left: -210px;
   width: 2px;
   height: 115px;
   background: #0bb5f4;
