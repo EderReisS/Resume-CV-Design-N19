@@ -241,3 +241,9 @@ body {
 .resume .resume_right .resume_hobby ul li:last-child:before {
   display: none;
 }
+
+.resume_jobs{
+  width: 800px;
+  background: #fff;
+  padding: 25px;
+}
