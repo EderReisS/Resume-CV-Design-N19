@@ -244,6 +244,61 @@ body {
 
 .resume_jobs{
   width: 800px;
-  background: #fff;
+  background: rgb(160,119,227);
+  background: linear-gradient(288deg, rgba(160,119,227,1) 0%, rgba(9,121,97,1) 51%, rgba(0,212,255,1) 100%);
   padding: 25px;
+}
+
+.resume_jobs .title{
+  background: #fff;
+  text-align: center;
+  font-weight: 100;
+  color: #000;
+  margin-bottom: 25px;
+  padding: 10px 0;
+  border-bottom: 2px solid #b1eaff;
+  position: relative;
+}
+
+.resume_jobs .job {
+  background: #fff;
+  display: flex;
+  padding-left: 40px;
+  overflow: hidden;
+  padding: 25px 0;
+  border-bottom: 2px solid #b1eaff;
+  position: relative;
+}
+
+.resume_jobs .job .place_job{
+  max-width: 200px; 
+}
+
+
+
+.resume_jobs .job img{
+  border: 3px solid #ddd;
+  border-radius: 90%;
+  height: 7rem;
+  width: 7rem;
+  padding: 3px 3px;
+  background-color:rgb(172, 172, 165);
+  align-items: center;
+  position: relative;
+  right: -10px;
+}
+
+about_place {
+  position: relative;
+  right: -20px;
+}
+
+.resume_jobs .job .descrition_job {
+  max-width: 600px;
+  align-items: left;
+}
+
+.resume_jobs .job .descrition_job .title_job{
+  font-weight: 500;
+  font-size: 16px;  
 }
