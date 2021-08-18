@@ -210,14 +210,38 @@ body {
   background: #0bb5f4;
 }
 
+.resume .resume_right .resume_work ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:  space-around;
+}
+
+.resume .resume_right .resume_work ul .box {
+  width: 10rem;
+  height: 10rem;
+  border: 2px solid #0bb5f4;
+  border-radius: 50%;
+  padding: 3px 3px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between 10px;
+}
+
+.resume .resume_right .resume_work ul .box img {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 20px;
+}
+
 .resume .resume_right .resume_hobby ul {
   display: flex;
   justify-content: space-between;
 }
 
 .resume .resume_right .resume_hobby ul li {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   border: 2px solid #0bb5f4;
   border-radius: 50%;
   position: relative;
@@ -225,22 +249,9 @@ body {
 }
 
 .resume .resume_right .resume_hobby ul li i {
-  font-size: 50px;
+  font-size: 80px;
 }
 
-.resume .resume_right .resume_hobby ul li:before {
-  content: "";
-  position: absolute;
-  top: 40px;
-  right: -120px;
-  width: 120px;
-  height: 2px;
-  background: #0bb5f4;
-}
-
-.resume .resume_right .resume_hobby ul li:last-child:before {
-  display: none;
-}
 
 .resume_jobs{
   width: 800px;
