@@ -35,17 +35,24 @@ body {
 
 .resume .resume_left {
   width: 280px;
-  background: #0bb5f4;
+  background: rgb(160,119,227);
+  background: linear-gradient(288deg, rgba(160,119,227,1) 0%, rgba(9,121,97,1) 51%, rgba(0,212,255,1) 100%);
 }
 
 .resume .resume_left .resume_profile {
   width: 100%;
   height: 280px;
+  margin: 10px 10px 10px 10px;
 }
 
 .resume .resume_left .resume_profile img {
-  width: 100%;
-  height: 100%;
+  border: 3px solid #ddd;
+  border-radius: 90%;
+  height: 90%;
+  width: 90%;
+  padding: 10px 10px;
+  background-color:rgb(172, 172, 165);
+  
 }
 
 .resume .resume_left .resume_content {
@@ -95,6 +102,8 @@ body {
   position: relative;
 }
 
+
+
 .resume .icon i,
 .resume .resume_right .resume_hobby ul li i {
   position: absolute;
@@ -116,7 +125,7 @@ body {
 }
 
 .resume .resume_left .resume_skills ul li .skill_name {
-  width: 25%;
+  width: 50%;
 }
 
 .resume .resume_left .resume_skills ul li .skill_progress {
@@ -151,7 +160,7 @@ body {
 }
 
 .resume .resume_right .bold {
-  color: #0bb5f4;
+  color: rgb(0, 0, 0);
 }
 
 .resume .resume_right .resume_work ul,
@@ -195,10 +204,39 @@ body {
   content: "";
   position: absolute;
   top: 14px;
-  left: -21px;
+  left: -210px;
   width: 2px;
   height: 115px;
   background: #0bb5f4;
+}
+
+.resume .resume_right .resume_work ul {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  width: 30rem;
+  height: 15rem;
+  padding: 0rem;
+
+}
+
+.resume .resume_right .resume_work ul .box {
+  width: 7rem;
+  height: 7rem;
+  border: 2px solid #0bb5f4;
+  border-radius: 50%;
+  padding: 3px 3px;
+  text-align: center;
+
+}
+
+
+.resume .resume_right .resume_work ul .box a img {
+  height: 4.5rem;
+  width: 4.5rem;
+  position: relative;
+  top: 15px;
+  
 }
 
 .resume .resume_right .resume_hobby ul {
@@ -207,8 +245,8 @@ body {
 }
 
 .resume .resume_right .resume_hobby ul li {
-  width: 80px;
-  height: 80px;
+  width: 7rem;
+  height: 7rem;
   border: 2px solid #0bb5f4;
   border-radius: 50%;
   position: relative;
@@ -216,19 +254,103 @@ body {
 }
 
 .resume .resume_right .resume_hobby ul li i {
-  font-size: 30px;
+  font-size: 70px;
 }
 
-.resume .resume_right .resume_hobby ul li:before {
-  content: "";
-  position: absolute;
-  top: 40px;
-  right: -52px;
-  width: 50px;
-  height: 2px;
-  background: #0bb5f4;
+
+.resume_jobs{
+  width: 800px;
+  background: rgb(160,119,227);
+  background: linear-gradient(288deg, rgba(160,119,227,1) 0%, rgba(9,121,97,1) 51%, rgba(0,212,255,1) 100%);
+  padding: 25px;
 }
 
-.resume .resume_right .resume_hobby ul li:last-child:before {
-  display: none;
+.resume_jobs .title{
+  background: #fff;
+  text-align: center;
+  font-weight: 100;
+  color: #000;
+  margin-bottom: 25px;
+  padding: 10px 0;
+  border-bottom: 2px solid #b1eaff;
+  position: relative;
+}
+
+.resume_jobs .job {
+  background: #fff;
+  display: flex;
+  padding-left: 40px;
+  overflow: hidden;
+  padding: 25px 0;
+  border-bottom: 2px solid #b1eaff;
+  position: relative;
+}
+
+.resume_jobs .job .place_job{
+  max-width: 200px; 
+}
+
+
+
+.resume_jobs .job img{
+  border: 3px solid #ddd;
+  border-radius: 90%;
+  height: 7rem;
+  width: 7rem;
+  padding: 3px 3px;
+  background-color:rgb(172, 172, 165);
+  align-items: center;
+  position: relative;
+  right: -10px;
+}
+
+about_place {
+  position: relative;
+  right: -20px;
+}
+
+.resume_jobs .job .descrition_job {
+  max-width: 600px;
+  align-items: left;
+}
+
+.resume_jobs .job .descrition_job .title_job{
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;  
+}
+
+header{
+  z-index: 100; 
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /*ajusta o texto da para a visualização, amputando o possível aparecimento da barra de rolagem*/
+}
+
+.img-wrapper{
+  z-index: -10; 
+  width: 100%;
+  height: 145rem;
+  overflow: hidden; /*ajusta o texto da para a visualização, amputando o possível aparecimento da barra de rolagem*/
+  background-color: rgba(0, 0, 0, 0.8); 
+  position:absolute ;
+  top:0;
+  left:0; 
+}
+
+.img-wrapper img{ /*aplica as mudanças em arquivos imagens etiquetados*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*mudanças de visualização não a resolução da imagem*/
+  opacity: 0.6;
+  animation: zoom 65s;
+}
+
+@keyframes zoom { /* animação de zoom da imagem de back ground variando de 1.3xp a 1.0 xp */
+  0%{
+      transform: scale(1.0);
+  }
+  100%{
+      transform: scale(1.2);
+  }
 }
